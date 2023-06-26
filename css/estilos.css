@@ -16,7 +16,7 @@ section,img {
     border-style:double;
     border-radius: 20px;
     border-width: 20px;
-    width: 70pc;
+    width: 60pc;
     padding: 10px;
     margin: 10px;
     background-color: turquoise;
@@ -26,7 +26,7 @@ section,img {
     border-style:double;
     border-radius: 20px;
     border-width: 20px;
-    width: 80pc;
+    width: 70pc;
     padding: 10px;
     margin: 10px;
     background-color: turquoise;
@@ -36,7 +36,7 @@ section,img {
     border-style:double;
     border-radius: 20px;
     border-width: 20px;
-    width: 90pc;
+    width: 80pc;
     padding: 10px;
     margin: 10px;
     background-color: turquoise;
@@ -46,6 +46,7 @@ section,img {
     border-style:double;
     border-radius: 20px;
     border-width: 20px;
+     width: 90pc;
     padding: 10px;
     margin: 10px;
     background-color: turquoise;
