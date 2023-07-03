@@ -46,6 +46,7 @@ section,img {
     border-style:double;
     border-radius: 20px;
     border-width: 20px;
+    width: 80pc;
     padding: 10px;
     margin: 10px;
     background-color: turquoise;
