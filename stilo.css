@@ -7,12 +7,21 @@ body {
     background-color: #4CAF50;
     color: white;
     padding: 10px;
+    display: flex; /* Usamos flexbox para alinear horizontalmente los elementos */
+    align-items: center; /* Centramos verticalmente */
+    justify-content: center; /* Centramos horizontalmente */
   }
 
 /* Estilo para el título de la barra de navegación */
 .navbar-title {
   font-size: 24px;
   font-weight: bold;
+}
+
+.navbar-logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
 }
 
 /* Estilo para la caja de comentarios */
