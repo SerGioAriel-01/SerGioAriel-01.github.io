@@ -35,14 +35,16 @@
     <div id="animal-list"></div>
 
     <div class="comments-section">
-    <h2>Deja tu comentario</h2>
-    <form id="comment-form">
-      <textarea id="comment-input" placeholder="Escribe aquí tu comentario"></textarea>
-      <button type="submit">Enviar comentario</button>
-    </form>
-    <div id="comments">
-      <!-- Aquí se mostrarán los comentarios -->
-    </div>
+      <h2>Deja tu comentario</h2>
+      <form id="comment-form">
+        <label for="name-input">Tu nombre:</label>
+        <input type="text" id="name-input" required>
+        <textarea id="comment-input" placeholder="Escribe aquí tu comentario" required></textarea>
+        <button type="submit">Enviar comentario</button>
+      </form>
+      <div id="comments">
+        <!-- Aquí se mostrarán los comentarios -->
+      </div>
   </div>
 
   <script src="script.js"></script>

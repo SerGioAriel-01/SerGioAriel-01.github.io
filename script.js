@@ -81,27 +81,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Código para manejar el envío de comentarios
   const commentForm = document.getElementById('comment-form');
+  const nameInput = document.getElementById('name-input');
   const commentInput = document.getElementById('comment-input');
   const commentsSection = document.getElementById('comments');
 
   commentForm.addEventListener('submit', (event) => {
     event.preventDefault();
+    const name = nameInput.value.trim();
     const commentText = commentInput.value.trim();
-    if (commentText !== '') {
-      addComment(commentText);
+    if (name !== '' && commentText !== '') {
+      addComment(name, commentText);
+      nameInput.value = '';
       commentInput.value = '';
     }
   });
 
-  function addComment(text) {
+  function addComment(name, text) {
     const currentDate = new Date();
     const commentDate = `${currentDate.toLocaleDateString()} ${currentDate.toLocaleTimeString()}`;
     const commentDiv = document.createElement('div');
     commentDiv.className = 'comment';
     commentDiv.innerHTML = `
+      <p><strong>${name}</strong></p>
       <p>${text}</p>
       <p class="comment-date">Publicado el ${commentDate}</p>
     `;
     commentsSection.appendChild(commentDiv);
   }
 });
+
+
+
+
+
