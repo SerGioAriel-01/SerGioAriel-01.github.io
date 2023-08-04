@@ -61,7 +61,7 @@ function adoptarAnimal(nombreAnimal) {
       alert('¡Enhorabuena! Has adoptado a Max. recuerda, le gusta que lo mimen.');
       break;
     case 'kiwi':
-      alert('¡Felicidades! Kiwi ahora es parte de tu familia.recuerda darle muchas zanahorias si no se enfadara ¡Muchas Gracias por adoptarlo!');
+      alert('¡Felicidades! Kiwi ahora es parte de tu familia. "Recuerda" le gustan mucho las zanahorias. ¡Muchas Gracias por adoptarlo!');
       break;
     case 'chispa':
       alert('¡Felicidades! Chispa ha encontrado un nuevo hogar junto a ti. ¡Gracias por adoptar!');
@@ -109,8 +109,3 @@ document.addEventListener('DOMContentLoaded', () => {
     commentsSection.appendChild(commentDiv);
   }
 });
-
-
-
-
-

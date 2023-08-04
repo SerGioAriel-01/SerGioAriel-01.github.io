@@ -3,51 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Huellitas Felices</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <title>Adopción de Mascotas - Huellitas Felices</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="stilo.css">
 </head>
 <body>
-    <nav class="navbar">
-        <img src="https://e7.pngegg.com/pngimages/85/918/png-clipart-dog-child-drawing-como-dibujar-dog-mammal-child-thumbnail.png" alt="Logo de Huellitas Felices" class="navbar-logo">
-        <div class="navbar-title">Huellitas Felices</div>
-      </nav>
-      <div class="description">
-        <p>
-          En Huellitas Felices, creemos que adoptar una mascota es más que darle un hogar;
-          es ofrecerle una oportunidad de tener una vida llena de amor y felicidad.
-          Nuestra página web está dedicada a promover la adopción responsable de animales
-          domésticos, con el objetivo de encontrarles un hogar amoroso y brindarles una
-          segunda oportunidad.
-        </p>
-        <p>
-          Encontrarás una variedad de adorables animales en busca de su familia ideal.
-          Desde encantadores gatitos y perritos llenos de energía, hasta adorables conejitos
-          buscando un lugar cálido y cariñoso para llamar hogar. Cada mascota tiene una
-          historia única y especial, y estamos emocionados de presentarte a nuestros fieles
-          compañeros que esperan ansiosamente encontrar un lugar donde pertenecer.
-        </p>
-        <p>
-          ¡Gracias por considerar la adopción y ser parte de nuestro compromiso con el
-          bienestar animal!
-        </p>
-      </div>
-    <h2>Animales para Adopción</h2>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success justify-content-center">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./img/navimg.png" alt="Logo de Huellitas Felices" class="navbar-logo">
+        Bienvenidos a Huellitas Felices
+      </a>
+    </div>
+  </nav>
+  <div class="container mt-4">
+    <h1>Animalitos que buscan un hogar</h1>
     <div id="animal-list"></div>
 
-    <div class="comments-section">
+    <div class="comments-section mt-4">
       <h2>Deja tu comentario</h2>
       <form id="comment-form">
-        <label for="name-input">Tu nombre:</label>
-        <input type="text" id="name-input" required>
-        <textarea id="comment-input" placeholder="Escribe aquí tu comentario" required></textarea>
-        <button type="submit">Enviar comentario</button>
+        <div class="mb-3">
+          <label for="name-input" class="form-label">Tu nombre:</label>
+          <input type="text" id="name-input" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="comment-input" class="form-label">Comentario:</label>
+          <textarea id="comment-input" class="form-control" placeholder="Escribe aquí tu comentario" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar comentario</button>
       </form>
-      <div id="comments">
-        <!-- Aquí se mostrarán los comentarios -->
+      <div id="comments" class="mt-4">
+        <!-- Aquí mostrare los comentarios -->
       </div>
+    </div>
   </div>
-
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
