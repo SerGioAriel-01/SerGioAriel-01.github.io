@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
   fetch('animales.json')
     .then(response => response.json())
@@ -109,3 +110,34 @@ document.addEventListener('DOMContentLoaded', () => {
     commentsSection.appendChild(commentDiv);
   }
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const contactLink = document.getElementById('contact-link');
+  const contactForm = document.getElementById('contact-modal');
+  const modal = new bootstrap.Modal(contactForm);
+
+  contactLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    modal.show();
+  });
+
+  contactForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    
+    // Simular el envío del formulario (reemplaza esto con tu código real de envío)
+    // ...
+
+    // Mostrar el alert de SweetAlert2
+    Swal.fire({
+      title: 'Mensaje enviado',
+      text: '¡Tu mensaje ha sido enviado con éxito!',
+      icon: 'success',
+      confirmButtonText: 'Aceptar'
+    }).then(() => {
+      // Redireccionar a la página principal
+      window.location.href = 'index.html'; // Cambia 'index.html' por la URL de tu página principal
+    });
+  });
+});
+
+
+

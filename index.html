@@ -6,6 +6,7 @@
   <title>Adopción de Mascotas - Huellitas Felices</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="stilo.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-success justify-content-center">
@@ -18,7 +19,7 @@
   </nav>
   <div class="description">
     <p>
-      En Huellitas Felices, creemos que adoptar una mascota es más que darle un hogar;
+      En Huellitas Felices, creemos que adoptar una mascota es más que darle un hogar,
       es ofrecerle una oportunidad de tener una vida llena de amor y felicidad.
       Nuestra página web está dedicada a promover la adopción responsable de animales
       domésticos, con el objetivo de encontrarles un hogar amoroso y brindarles una
@@ -59,12 +60,46 @@
       </div>
     </div>
   </div>
-    <div>
-      <footer class="text-black font-monospace" id="Copy">
-        CopyRight 2023 &copy; Digitallers, Sergio Ariel Carrizo Zarate
-   </footer>
+  <div class="text-center mt-4">
+    <button type="button" class="btn btn-primary custom-button" id="contact-link">Ponte en contacto con nosotros</button>
+  </div>
+    <!-- Modal de Contacto -->
+<div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contact-modal-label">Formulario de Contacto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="contact-form">
+          <div class="mb-3">
+            <label for="name-input" class="form-label">Tu nombre:</label>
+            <input type="text" id="name-input" class="form-control" placeholder="Escribe aquí tu nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="email-input" class="form-label">Tu correo electrónico:</label>
+            <input type="email" id="email-input" class="form-control" placeholder="Escribe aquí tu correo electrónico" required>
+          </div>
+          <div class="mb-3">
+            <label for="message-input" class="form-label">Mensaje:</label>
+            <textarea id="message-input" class="form-control" rows="4" placeholder="Escribe aquí tu mensaje" required></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" form="contact-form" class="btn btn-primary">Enviar</button>
+      </div>
     </div>
-  
+  </div>
+</div>
+</br>
+  <footer class="text-black font-monospace bg-light py-3">
+    <div class="container text-center">
+      CopyRight 2023 &copy; Digitallers, Sergio Ariel Carrizo Zarate
+  </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
