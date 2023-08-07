@@ -71,8 +71,8 @@ text-align: start;
 
 /* Estilo personalizado para el botón */
 .custom-button {
-  background-color: #FF6B6B;
-  color: white;
+  background-color: #00f7fc;
+  color: black;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -82,7 +82,7 @@ text-align: start;
 }
 
 .custom-button:hover {
-  background-color: #FF8F8F;
+  background-color: #004970;
 }
 
 .custom-button:focus {
