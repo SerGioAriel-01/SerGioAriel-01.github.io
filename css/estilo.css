@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+    background-color: #f2f2f2; /* Color de fondo */
+    background-image: url('/img/fondo.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-blur: 5px; /* Desenfoque */
+}
+
+
+/* Estilos para el logotipo */
+.logo {
+    display: inline-block;
+    margin-right: 20px; /* Agrega un margen opcional para separar el logotipo de la barra de navegación */
+}
+
+.logo img {
+    max-width: 100px; /* Ajusta el ancho máximo del logotipo según tus necesidades */
+    height: auto; /* Mantén la proporción de la imagen */
+}
+
+/* Encabezado y navegación */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+#red-social{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+/* Estilos para los elementos de la lista de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Aplica un estilo de diseño flexible para alinear los elementos */
+}
+
+nav ul li {
+    margin-right: 20px; /* Margen a la derecha para separar los elementos */
+}
+
+/* Alineación del logo en el header */
+.logo {
+    display: inline-block;
+    margin-right: auto; /* Mueve el logo hacia la izquierda */
+}
+
+/* Estilos para los íconos en la barra de navegación */
+nav ul li i {
+    margin-right: 5px; /* Agrega un pequeño margen entre el ícono y el texto */
+}
+
+/* Secciones */
+section {
+    padding: 40px;
+}
+
+/* Proyectos */
+.proyecto {
+    margin-bottom: 40px;
+}
+
+.proyecto img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para las imágenes de redes sociales */
+.redes-icono {
+    width: 40px; /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    margin: 0 10px; /* Espacio horizontal entre las imágenes */
+    transition: transform 0.2s ease-in-out; /* Efecto de transformación suave en el hover */
+}
+
+.redes-icono:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el ratón por encima */
+}
+
+/* Estilos para el fondo de color detrás de las imágenes */
+.red-social {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%; /* Para hacer que el fondo sea circular */
+    background-color: #ffffff; /* Cambia el color de fondo a blanco */
+    margin: 0 5px; /* Espacio entre las redes sociales */
+    width: 40px; /* Ajusta el ancho según tus necesidades */
+    height: 40px; /* Ajusta la altura según tus necesidades */
+}
+
+/* Estilos para la barra de navegación pegajosa */
+.navbar-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+
+
+
+
