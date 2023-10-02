@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6b97f212.css",
+    "main.js": "/static/js/main.a2318035.js",
+    "static/js/787.b8c6847b.chunk.js": "/static/js/787.b8c6847b.chunk.js",
+    "static/media/messi.jpg": "/static/media/messi.867ffdc81dea749f25f2.jpg",
+    "static/media/Logo.jpg": "/static/media/Logo.a9db3fac8eab24da881b.jpg",
+    "static/media/telecom.jpg": "/static/media/telecom.1a8e9cdf88e10480a6f6.jpg",
+    "static/media/avatar.png": "/static/media/avatar.0431e2167dc7538efb55.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.6b97f212.css.map": "/static/css/main.6b97f212.css.map",
+    "main.a2318035.js.map": "/static/js/main.a2318035.js.map",
+    "787.b8c6847b.chunk.js.map": "/static/js/787.b8c6847b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b97f212.css",
+    "static/js/main.a2318035.js"
+  ]
+}
