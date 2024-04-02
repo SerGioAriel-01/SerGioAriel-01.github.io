@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+header { 
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+}
+
+header{
+    background-color: aqua;
+    border:3px solid black;
+    border-radius: 15px;
+}
+
+header li {
+    list-style: none;
+    font-family: "Varela Round", sans-serif;
+    display: inline-block;    
+    background-color: white;
+    border:2px solid black;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+header li a{
+    text-decoration: none;  
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Varela Round", sans-serif;
+}
+
+p{
+    font-family: "Varela Round", sans-serif;
+}
+
+.imagenes { /* este codigo se reutilizo en todas las paginas */
+    width: 300px;
+    margin: 10px;
+    padding-left: 100px;
+}
+
+.section1 div{
+    display: inline-block;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+}
+
+.section2 div{
+    display: inline-block;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+}
+
+footer{
+    margin-top: 19%;
+    text-align: center;
+    background-color: black;
+    font-family: "Varela Round", sans-serif;
+    color: white;
+    padding-bottom: 10px;
+}
+
+/* css para la pagina nosotros */
+.sobrenosotros h2{
+    text-decoration: underline;
+}
+
+.sobrenosotros{
+    text-align: center;
+}
+
+/* css para la pagina servicios */
+.servicios h2{
+    text-decoration: underline;
+    font-family: "Varela Round", sans-serif;
+}
+
+.servicios{
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+}
+
+.sectionservicios div{
+    display: inline-block;
+    text-align: center;
+    padding-left: 150px;
+    padding-bottom: 8%;
+    font-family: "Varela Round", sans-serif;
+}
+
+.youtube{
+    padding-left: 40%;
+}
+
