@@ -20,10 +20,6 @@ header li {
     border-radius: 25px;
 }
 
-header li a{
-    text-decoration: none;  
-}
-
 h2{
     text-align: center;
     text-decoration: underline;
@@ -59,8 +55,8 @@ p{
     font-family: "Varela Round", sans-serif;
 }
 
-footer{
-    margin-top: 19%;
+.ftr-nosotros{
+    margin-top: 15%;
     text-align: center;
     background-color: black;
     font-family: "Varela Round", sans-serif;
@@ -75,6 +71,12 @@ footer{
 
 .sobrenosotros{
     text-align: center;
+}
+
+.acercadenosotros-bg{
+    background-color: aqua !important;
+    border-radius: 15px;
+    border-style: dashed;
 }
 
 /* css para la pagina servicios */
@@ -100,3 +102,114 @@ footer{
     padding-left: 40%;
 }
 
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    grid-template-areas: 
+    "img1 img2 img3 img3"
+    "img1 img4 img5 img6"
+    "img7 img4 img8 img8";
+    grid-gap: 15px;
+    padding: 20px;
+    background-color: cyan;
+    border-radius: 20px;
+    border-style: solid;
+
+}
+
+@media only screen and (max-width:990px){
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 180px);
+        grid-template-areas: 
+        "img1 img2 img3 img3"
+        "img1 img4 img4 img6"
+        "img7 img4 img4 img8";
+        grid-gap: 30px;
+        padding: 30px;
+        background-color: cyan;
+    };
+   }
+   @media only screen and (max-width:770px){
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 180px);
+        grid-template-areas: 
+        "img1 img1 img3 img3"
+        "img7 img7 img6 img6"
+        "img7 img7 img8 img8";
+        grid-gap: 30px;
+        padding: 40px;
+        background-color: cyan;
+    };
+   }
+
+   @media only screen and (max-width:550px){
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 180px);
+        grid-template-areas: 
+        "img1 img1 img3 img3"
+        "img6 img6 img6 img6"
+        "img6 img6 img6 img6";
+        grid-gap: 30px;
+        padding: 40px;
+        background-color: cyan;
+    };
+   }
+
+.item{
+    border: 3px solid #000;
+    background-size: cover;
+    background-position: right;
+    border-radius: 10px;
+    transition: all 0.9s;
+}
+
+.item:hover{
+    transform: scale(1.1);
+}
+
+.item1{
+    background-image: url(../assets/img/img1.jpg);
+    grid-area: img1;
+}
+
+.item2{
+    background-image: url(../assets/img/img2.jpg);
+    grid-area: img2;
+}
+
+.item3{
+    background-image: url(../assets/img/img3.jpg);
+    grid-area: img3;
+}
+
+.item4{
+    background-image: url(../assets/img/img4.jpg);
+    grid-area: img4;
+}
+
+.item5{
+    background-image: url(../assets/img/img5.jpg);
+    grid-area: img5;
+}
+
+.item6{
+    background-image: url(../assets/img/img6.jpg);
+    grid-area: img6;
+}
+
+.item7{
+    background-image: url(../assets/img/img7.jpg);
+    grid-area: img7;
+}
+
+.item8{
+    background-image: url(../assets/img/img8.jpg);
+    grid-area: img8;
+}

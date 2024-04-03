@@ -3,24 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Style/Style.css">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Nosotros CoderTech</title>
 </head>
 <body>
     <header>
-        <h1>CoderTech</h1>
-          <nav>
-              <ul class="colorfondo">
-                  <li><a href="../index.html">Inicio</a></li>
-                  <li><a href="nosotros.html">Nosotros</a></li>
-                  <li><a href="./servicios.html">Servicios</a></li>
-                  <li><a href="./Productos.html">Productos</a></li>
-                  <li><a href="./contactos.html">Contactos</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light p-4">
+            <a class="navbar-brand" href="#">CoderTech</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item m-2">
+                  <a class="nav-link " href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item m-2">
+                  <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item m-2">
+                  <a class="nav-link" href="/pages/servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item m-2">
+                  <a class="nav-link" href="/pages/contactos.html">Contacto</a>
+                </li>
               </ul>
-          </nav>    
+            </div>
+          </nav>     
     </header>
     <br>
-      <section class="sobrenosotros">
+      <section class="sobrenosotros acercadenosotros-bg container p-5 ">
         <h2>Acerca de Nosotros</h2>
         <p>
             En CoderTech, nos dedicamos a la venta de netbooks con un enfoque centrado en la calidad y la innovación. Nuestro equipo está compuesto por apasionados expertos en tecnología comprometidos en proporcionar soluciones eficientes y confiables para satisfacer las necesidades digitales de nuestros clientes.
@@ -33,6 +47,18 @@
         </p>
         <img src="../media/img/nosotros.jpg" alt="">
     </section>
-    <footer>CopyRight 2024 ©CoderTech</footer>
+    <div class="content"></div>
+    <footer class="ftr-nosotros bg-dark text-light text-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="mb-0">CopyRight 2024 ©CoderTech</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
