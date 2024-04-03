@@ -1,10 +1,11 @@
+/* css para la pagina index*/
+body{
+    background-color: white !important;
+}
 
 header { 
     text-align: center;
-    font-family: "Varela Round", sans-serif;
-}
-
-header{
+    font-family: "Varela Round", sans-serif; 
     background-color: aqua;
     border:3px solid black;
     border-radius: 15px;
@@ -24,82 +25,16 @@ h2{
     text-align: center;
     text-decoration: underline;
     font-family: "Varela Round", sans-serif;
+    padding: 20px;
 }
 
 p{
     font-family: "Varela Round", sans-serif;
 }
 
-.imagenes { /* este codigo se reutilizo en todas las paginas */
-    width: 300px;
-    margin: 10px;
-    padding-left: 100px;
-}
-
-/* @media only screen and (max-width:990px){
-    footer{
-        padding: 20px;
-    };
-   } */
-
-
-.section1 div{
-    display: inline-block;
-    text-align: center;
-    font-family: "Varela Round", sans-serif;
-}
-
-.section2 div{
-    display: inline-block;
-    text-align: center;
-    font-family: "Varela Round", sans-serif;
-}
-
-.ftr-nosotros{
-    margin-top: 15%;
-    text-align: center;
-    background-color: black;
-    font-family: "Varela Round", sans-serif;
-    color: white;
-    padding-bottom: 10px;
-}
-
-/* css para la pagina nosotros */
-.sobrenosotros h2{
-    text-decoration: underline;
-}
-
-.sobrenosotros{
-    text-align: center;
-}
-
-.acercadenosotros-bg{
-    background-color: aqua !important;
-    border-radius: 15px;
-    border-style: dashed;
-}
-
-/* css para la pagina servicios */
-.servicios h2{
-    text-decoration: underline;
-    font-family: "Varela Round", sans-serif;
-}
-
-.servicios{
-    text-align: center;
-    font-family: "Varela Round", sans-serif;
-}
-
-.sectionservicios div{
-    display: inline-block;
-    text-align: center;
-    padding-left: 150px;
-    padding-bottom: 8%;
-    font-family: "Varela Round", sans-serif;
-}
-
-.youtube{
-    padding-left: 40%;
+.texto-galeria{
+    border-radius: 50px;
+    border-style: solid;
 }
 
 .galeria{
@@ -212,4 +147,121 @@ p{
 .item8{
     background-image: url(../assets/img/img8.jpg);
     grid-area: img8;
+}
+
+
+.imagenes { /* este codigo se reutilizo en todas las paginas */
+    width: 400px;
+    border-radius: 10px;
+    transition: all 0.9s;
+}
+
+.imagenes:hover{
+    transform: scale(1.1);
+}
+
+
+@media only screen and (max-width:550px){
+    .imagenes{
+        display: inline-block;
+        width: 100%; 
+        };
+   }
+
+
+.section1 div{
+    display: inline-block;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+}
+
+.section2 div{
+    display: inline-block;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+}
+
+
+/* css para la pagina nosotros */
+.sobrenosotros h2{
+    text-decoration: underline;
+}
+
+.sobrenosotros{
+    text-align: center;
+    border-radius: 50px;
+    border-style: solid;
+}
+
+
+.ftr-nosotros{
+    margin-top: 12%;
+    text-align: center;
+    background-color: black;
+    font-family: "Varela Round", sans-serif;
+    color: white;
+    padding-bottom: 10px;
+}
+
+/* css para la pagina servicios */
+.servicios h2{
+    text-decoration: underline;
+    font-family: "Varela Round", sans-serif;
+}
+
+.servicios{
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    padding: 50px;
+    border-radius: 50px;
+    border-style: solid;
+}
+
+.sectionservicios div{
+    display: inline-block;
+    text-align: center;
+    padding-left: 150px;
+    font-family: "Varela Round", sans-serif;
+}
+
+
+
+/*CSS para la pagina productos*/
+.sectionproductos div{
+    display: inline-block;
+    text-align: center;
+    padding-left: 150px;
+    padding-bottom: 8%;
+    font-family: "Varela Round", sans-serif;
+}
+
+.imagenesproductos{ 
+    width: 380px;
+    border-radius: 10px;
+    transition: all 0.9s;
+}
+
+.imagenesproductos:hover{
+    transform: scale(1.1);
+}
+
+
+@media only screen and (max-width:1020px){
+    .imagenesproductos{
+        width: 180px; 
+        };
+   }
+
+   @media only screen and (max-width:919px){
+    .imagenesproductos{
+        width: 190px; 
+        };
+   }
+
+
+/* css para la pagina contactos*/
+.fab{
+    font-size: xx-large;
+    padding-top: 50px;
+    padding-left: 50px;
 }
