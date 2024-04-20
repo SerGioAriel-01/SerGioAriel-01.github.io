@@ -225,6 +225,10 @@ p {
   font-family: "Varela Round", sans-serif;
 }
 
+.sectionproductos h2 {
+  text-align: start;
+}
+
 .imagenesproductos {
   width: 380px;
   border-radius: 10px;

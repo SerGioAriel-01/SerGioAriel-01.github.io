@@ -7,6 +7,9 @@ $color-border: black;
 //radio de los bordes
 $border-radius: 0px; 
 
+//Productos
+$titulo-section: start;
+
 
 $padding: 20px; 
 
@@ -258,6 +261,10 @@ p{
     padding-left: 150px;
     padding-bottom: 8%;
     font-family: "Varela Round", sans-serif;
+}
+
+.sectionproductos h2{
+    text-align: $titulo-section;
 }
 
 .imagenesproductos{ 
