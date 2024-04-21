@@ -1,20 +1,12 @@
-/* css para la pagina index*/
-
-//font
+// Variables
 $font-family: "Varela Round", sans-serif; 
-//color de bordes
 $color-border: black; 
-//radio de los bordes
 $border-radius: 0px; 
-
-//Productos
-$titulo-section: start;
-
-
 $padding: 20px; 
-
 $color-texto: black; 
+$titulo-section: center;
 
+// Estilos generales
 body {
     font-family: $font-family;
     color: $color-texto;
@@ -39,19 +31,19 @@ header li {
 h2{
     text-align: center;
     text-decoration: underline;
-    font-family: "Varela Round", sans-serif;
+    font-family: $font-family;
     padding: 20px;
 }
 
 p{
-    font-family: "Varela Round", sans-serif;
+    font-family: $font-family;
 }
 
 .carousel-item {
     display: flex; 
     justify-content: center; 
     align-items: center; 
-  }
+}
 
 .imagenes-carrusel {
     width: 100%;
@@ -82,9 +74,9 @@ p{
     padding: 20px;
     border-radius: 20px;
     border-style: solid;
-
 }
 
+// Media queries
 @media only screen and (max-width:990px){
     .galeria{
         display: grid;
@@ -97,8 +89,9 @@ p{
         grid-gap: 30px;
         padding: 30px;
     };
-   }
-   @media only screen and (max-width:770px){
+}
+
+@media only screen and (max-width:770px){
     .galeria{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -110,9 +103,9 @@ p{
         grid-gap: 30px;
         padding: 40px;
     };
-   }
+}
 
-   @media only screen and (max-width:550px){
+@media only screen and (max-width:550px){
     .galeria{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -124,8 +117,9 @@ p{
         grid-gap: 30px;
         padding: 40px;
     };
-   }
+}
 
+// Estilos de los items de la galería
 .item{
     border: 3px solid #000;
     background-size: cover;
@@ -138,48 +132,14 @@ p{
     transform: scale(1.1);
 }
 
-.item1{
-    background-image: url(../assets/img/img1.jpg);
-    grid-area: img1;
+@for $i from 1 through 8 {
+    .item#{$i} {
+        background-image: url(../assets/img/img#{$i}.jpg);
+        grid-area: img#{$i};
+    }
 }
 
-.item2{
-    background-image: url(../assets/img/img2.jpg);
-    grid-area: img2;
-}
-
-.item3{
-    background-image: url(../assets/img/img3.jpg);
-    grid-area: img3;
-}
-
-.item4{
-    background-image: url(../assets/img/img4.jpg);
-    grid-area: img4;
-}
-
-.item5{
-    background-image: url(../assets/img/img5.jpg);
-    grid-area: img5;
-}
-
-.item6{
-    background-image: url(../assets/img/img6.jpg);
-    grid-area: img6;
-}
-
-.item7{
-    background-image: url(../assets/img/img7.jpg);
-    grid-area: img7;
-}
-
-.item8{
-    background-image: url(../assets/img/img8.jpg);
-    grid-area: img8;
-}
-
-
-.imagenes { /* este codigo se reutilizo en todas las paginas */
+.imagenes {
     width: 400px;
     border-radius: 10px;
     transition: all 0.9s;
@@ -189,25 +149,17 @@ p{
     transform: scale(1.1);
 }
 
-
 @media only screen and (max-width:550px){
     .imagenes{
         display: inline-block;
         width: 100%; 
-        };
-   }
-
-
-.section1 div{
-    display: inline-block;
-    text-align: center;
-    font-family: "Varela Round", sans-serif;
+    };
 }
 
-.section2 div{
+.section1 div, .section2 div, .sectionproductos div{
     display: inline-block;
     text-align: center;
-    font-family: "Varela Round", sans-serif;
+    font-family: $font-family;
 }
 
 /* css para la pagina nosotros */
@@ -219,28 +171,19 @@ p{
     text-align: center;
     border-radius: 50px;
     border-style: solid;
-}
-
-
-.ftr-nosotros{
-    margin-top: 12%;
-    text-align: center;
-    background-color: black;
-    font-family: "Varela Round", sans-serif;
-    color: white;
-    padding-bottom: 10px;
+    margin-top: 1%;
 }
 
 /* css para la pagina servicios */
 .servicios h2{
     text-decoration: underline;
-    font-family: "Varela Round", sans-serif;
+    font-family: $font-family;
 }
 
 .servicios{
     text-align: center;
-    font-family: "Varela Round", sans-serif;
-    padding: 50px;
+    font-family: $font-family;
+    padding: $padding*5;
     border-radius: 50px;
     border-style: solid;
 }
@@ -249,20 +192,10 @@ p{
     display: inline-block;
     text-align: center;
     padding-left: 150px;
-    font-family: "Varela Round", sans-serif;
+    font-family: $font-family;
 }
-
-
 
 /*CSS para la pagina productos*/
-.sectionproductos div{
-    display: inline-block;
-    text-align: center;
-    padding-left: 150px;
-    padding-bottom: 2%;
-    font-family: "Varela Round", sans-serif;
-}
-
 .sectionproductos h2{
     text-align: $titulo-section;
 }
@@ -277,19 +210,17 @@ p{
     transform: scale(1.1);
 }
 
-
 @media only screen and (max-width:1020px){
     .imagenesproductos{
         width: 180px; 
-        };
-   }
+    };
+}
 
-   @media only screen and (max-width:919px){
+@media only screen and (max-width:919px){
     .imagenesproductos{
         width: 190px; 
-        };
-   }
-
+    };
+}
 
 /* css para la pagina contactos*/
 .fab{
@@ -298,3 +229,13 @@ p{
     padding-left: 50px;
 }
 
+.ftr-contacto{
+    margin: 5% 0 0 ;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .ftr-contacto {
+        margin: 5% auto; 
+        max-width: 100%; 
+    }
+}

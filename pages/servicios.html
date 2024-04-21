@@ -1,80 +1,179 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Servicios CoderTech</title>
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Descubre los servicios tecnológicos ofrecidos por CoderTech para satisfacer tus necesidades digitales." />
+  <meta name="keywords" content="servicios, asesoramiento, soporte técnico, netbooks, CoderTech" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <title>Servicios CoderTech</title>
+</head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-info navbar-light p-4">
-            <a class="navbar-brand" href="#">CoderTech</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-info navbar-light p-4">
+      <a class="navbar-brand a-text" href="#">CoderTech</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item m-2">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="Productos.html">Productos</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="contactos.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <br />
+  <section class="servicios container bg-info">
+    <h2>Servicios</h2>
+    <p>
+      En Codertech, ofrecemos una gama completa de servicios diseñados para
+      satisfacer las necesidades tecnológicas de nuestros clientes.
+      <br />
+      Nos esforzamos por proporcionar soluciones integrales y eficientes que
+      mejoren la experiencia digital de cada individuo. Nuestros servicios
+      incluyen:
+    </p>
+  </section>
+  <section class="sectionservicios m-5">
+    <div>
+      <h3>Venta de Netbooks</h3>
+      <a href="Productos.html"><img class="imagenes" src="../assets/img/netbookcomprada.jpg"
+          alt="Hombre comprando netbook" /></a>
+    </div>
+    <div>
+      <h3>Asesoramiento Personalizado</h3>
+      <a href="nosotros.html"><img class="imagenes" src="../assets/img/asesoramiento.jpg"
+          alt="Vendedor Asesorando clientes" /></a>
+    </div>
+    <div>
+      <h3>Soporte Técnico</h3>
+      <img class="imagenes" src="../assets/img/servicio tecnico.png" alt="Vendedor Asesorando clientes" />
+    </div>
+  </section>
+
+  <section class="servicios container bg-info">
+    <h2>Nuestros Servicios</h2>
+    <ul>
+      <li>Amplia Variedad de Netbooks de las Mejores Marcas</li>
+      <li>Asesoramiento Personalizado para Elegir la Netbook Perfecta</li>
+      <li>Servicio Técnico Especializado en Netbooks</li>
+      <li>Garantía y Soporte Postventa Confiable</li>
+      <li>Opciones de Financiamiento y Facilidades de Pago</li>
+      <li>Envío Rápido y Seguro a Todo el País</li>
+      <li>Promociones y Descuentos Especiales en Netbooks</li>
+      <li>Actualizaciones Constantes sobre Novedades en Netbooks</li>
+    </ul>
+  </section>
+
+  <section class="faq container">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h3 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              ¿Cuáles son los métodos de pago aceptados?
             </button>
-        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item m-2">
-                  <a class="nav-link " href="/index.html">Inicio</a>
-                </li>
-                <li class="nav-item m-2">
-                  <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item m-2">
-                  <a class="nav-link" href="/pages/Productos.html">Productos</a>
-                </li>
-                <li class="nav-item m-2">
-                  <a class="nav-link" href="/pages/servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item m-2">
-                  <a class="nav-link" href="/pages/contactos.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
-          </nav> 
-    </header>
-    <br>
-    <section class="servicios container bg-info">
-        <h2>Servicios</h2>
-        <p>
-            En Codertech, ofrecemos una gama completa de servicios diseñados para satisfacer las necesidades tecnológicas de nuestros clientes.
-            <br>
-            Nos esforzamos por proporcionar soluciones integrales y eficientes que mejoren la experiencia digital de cada individuo. Nuestros servicios incluyen:
-        </p>
-    </section>
-    <section class="sectionservicios m-5">
-     <div>
-        <h3>Venta de Netbooks</h3>
-        <img class="imagenes" src="../assets/img/netbookcomprada.jpg" alt="Hombre comprando netbook" >
-     </div> 
-     <div>
-        <h3>Asesoramiento Personalizado</h3>
-        <img class="imagenes" src="../assets/img/asesoramiento.jpg" alt="Vendedor Asesorando clientes" >
-     </div>
-     <div>
-        <h3>Servicio Técnico</h3>
-        <img class="imagenes" src="../assets/img/servicio tecnico.png" alt="Vendedor Asesorando clientes" >
-     </div>
-    </section>
-    <div class="content"></div>
-    <footer class="ftr-nosotros bg-dark text-light text-center py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <p class="mb-0">CopyRight 2024 ©CoderTech</p>
-            </div>
+          </h3>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+          <div class="card-body">
+            Aceptamos pagos con tarjeta de crédito/débito (Visa, Mastercard,
+            Naranja, American Express), PayPal y transferencia bancaria.
           </div>
         </div>
-      </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h3 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              ¿Cuál es el tiempo de entrega estimado?
+            </button>
+          </h3>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+          <div class="card-body">
+            El tiempo de entrega puede variar según la ubicación del cliente.
+            Por lo general, los envíos dentro del país demoran entre 3 y 7
+            días hábiles.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h3 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+              aria-expanded="false" aria-controls="collapseThree">
+              ¿Ofrecen garantía en los productos?
+            </button>
+          </h3>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+          <div class="card-body">
+            Sí, todos nuestros productos vienen con una garantía de 1 año.
+            Consulta nuestra política de garantía para obtener más detalles.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h3 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive"
+              aria-expanded="false" aria-controls="collapseFive">
+              ¿Dónde puedo contactarlos?
+            </button>
+          </h3>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+          <div class="card-body">
+            Puedes contactarnos por todos nuestros medios ingresando al siguiente link:
+            <a href="contactos.html">Contacto</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="ftr-nosotros bg-dark text-light text-center py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="mb-0">CopyRight 2024 ©CoderTech</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

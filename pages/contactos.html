@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página de contacto de CoderTech, donde puedes encontrarnos, ver nuestros horarios de atención y contactarnos mediante un formulario." />
+    <meta name="keywords" content="contacto, ubicación, horarios, formulario, redes sociales, CoderTech" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -14,7 +16,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-info navbar-light p-4">
-            <a class="navbar-brand" href="#">CoderTech</a>
+            <a class="navbar-brand a-text" href="#">CoderTech</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -58,14 +60,35 @@
             <p>son de Lunes a Sabado</p>
             <p>"07:00 AM" a "12:00 PM"</p>
         </div>
+
         <div>
             <h3>Tambien puedes encontrarnos por nuestras redes sociales</h3>
             <i class="fab fa-facebook-f"></i>
             <i class="fab fa-instagram"></i>
             <i class="fab fa-twitter"></i>
         </div>
-    </section>   
-    <footer class="ftr-nosotros bg-dark text-light text-center py-5">
+    </section>  
+    
+    <div class="container">
+      <h2 class="mt-5">Contactanos mediante este formulario</h2>
+      <form action="/enviar.php" method="post">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+
+    <footer class="ftr-contacto bg-dark text-light text-center py-5">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
