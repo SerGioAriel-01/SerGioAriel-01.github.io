@@ -5,8 +5,13 @@ $border-radius: 0px;
 $padding: 20px; 
 $color-texto: black; 
 $titulo-section: center;
+$color-nav-click: #00ccff;
 
 // Estilos generales
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: $font-family;
     color: $color-texto;
@@ -20,6 +25,15 @@ header {
 .a-text{
     font-size: xx-large !important;
 }
+
+.navbar-nav .nav-item {
+    transition: background-color 0.3s ease-in, color 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-item:hover {
+    background-color: $color-nav-click; 
+    color: white; 
+  }
 
 header li {
     background-color: white;
