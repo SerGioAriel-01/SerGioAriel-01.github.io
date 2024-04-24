@@ -209,47 +209,55 @@ p{
     font-family: $font-family;
 }
 
+.faq {
+    max-width: 800px; /* Ajusta este valor según tu diseño */
+    margin: auto; /* Centra el contenido horizontalmente */
+  }
+  
+
 /*CSS para la pagina productos*/
+
+.home-producto{
+    border-radius: 30px;
+    margin-top: 40px;
+    text-align: $titulo-section;
+    border-style: solid;
+
+}
+
 .sectionproductos h2{
     text-align: $titulo-section;
 }
 
-.imagenesproductos{ 
-    width: 380px;
-    border-radius: 10px;
+img{ 
     transition: all 0.9s;
 }
 
-.imagenesproductos:hover{
+img:hover{
     transform: scale(1.1);
 }
 
-@media only screen and (max-width:1020px){
-    .imagenesproductos{
-        width: 180px; 
-    };
-}
+.card {
+    max-width: 300px; 
+  }
 
-@media only screen and (max-width:919px){
-    .imagenesproductos{
-        width: 190px; 
-    };
-}
+  .avatar {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    margin-right: 10px; 
+  }
 
 /* css para la pagina contactos*/
-.fab{
-    font-size: xx-large;
-    padding-top: 50px;
-    padding-left: 50px;
+
+.home-contacto{
+    border-radius: 30px;
+    margin-top: 40px;
+    text-align: $titulo-section;
+    border-style: solid;
+
 }
 
-.ftr-contacto{
-    margin: 5% 0 0 ;
-}
-
-@media only screen and (min-width: 300px) and (max-width: 600px) {
-    .ftr-contacto {
-        margin: 5% auto; 
-        max-width: 100%; 
-    }
+footer{
+    margin-top: 40px;
 }

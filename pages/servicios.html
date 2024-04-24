@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Descubre los servicios tecnológicos ofrecidos por CoderTech para satisfacer tus necesidades digitales." />
+  <meta name="description"
+    content="Descubre los servicios tecnológicos ofrecidos por CoderTech para satisfacer tus necesidades digitales." />
   <meta name="keywords" content="servicios, asesoramiento, soporte técnico, netbooks, CoderTech" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <title>Servicios CoderTech</title>
 </head>
@@ -57,39 +58,40 @@
       incluyen:
     </p>
   </section>
-  <section class="sectionservicios m-5">
-    <div>
-      <h3>Venta de Netbooks</h3>
-      <a href="Productos.html"><img class="imagenes" src="../assets/img/netbookcomprada.jpg"
-          alt="Hombre comprando netbook" /></a>
-    </div>
-    <div>
-      <h3>Asesoramiento Personalizado</h3>
-      <a href="nosotros.html"><img class="imagenes" src="../assets/img/asesoramiento.jpg"
-          alt="Vendedor Asesorando clientes" /></a>
-    </div>
-    <div>
-      <h3>Soporte Técnico</h3>
-      <img class="imagenes" src="../assets/img/servicio tecnico.png" alt="Vendedor Asesorando clientes" />
-    </div>
-  </section>
 
+  <section class="sectionproductos py-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-3 m-5">
+            <h3>Venta de Netbooks</h3>
+            <a href="#"><img class="img-fluid" src="../assets/img/netbookcomprada.jpg" alt="Hombre comprando netbook" ></a>
+        </div>
+        <div class="col-md-3 m-5">
+            <h3>Asesoramiento Personalizado</h3>
+            <a href="#"><img class="img-fluid" src="../assets/img/asesoramiento.jpg" alt="Vendedor Asesorando clientes" ></a>
+        </div>
+        <div class="col-md-3 m-5">
+            <h3>Soporte Técnico</h3>
+            <a href="#"><img class="img-fluid" src="../assets/img/servicio tecnico.png" alt="Vendedor Asesorando clientes" ></a>
+        </div>
+    </div>
+</section>
+  
   <section class="servicios container bg-info">
     <h2>Nuestros Servicios</h2>
-    <ul>
-      <li>Amplia Variedad de Netbooks de las Mejores Marcas</li>
-      <li>Asesoramiento Personalizado para Elegir la Netbook Perfecta</li>
-      <li>Servicio Técnico Especializado en Netbooks</li>
-      <li>Garantía y Soporte Postventa Confiable</li>
-      <li>Opciones de Financiamiento y Facilidades de Pago</li>
-      <li>Envío Rápido y Seguro a Todo el País</li>
-      <li>Promociones y Descuentos Especiales en Netbooks</li>
-      <li>Actualizaciones Constantes sobre Novedades en Netbooks</li>
-    </ul>
+      <ul>
+        <li>Amplia Variedad de Netbooks de las Mejores Marcas</li>
+        <li>Asesoramiento Personalizado para Elegir la Netbook Perfecta</li>
+        <li>Servicio Técnico Especializado en Netbooks</li>
+        <li>Garantía y Soporte Postventa Confiable</li>
+        <li>Opciones de Financiamiento y Facilidades de Pago</li>
+        <li>Envío Rápido y Seguro a Todo el País</li>
+        <li>Promociones y Descuentos Especiales en Netbooks</li>
+        <li>Actualizaciones Constantes sobre Novedades en Netbooks</li>
+      </ul>
   </section>
 
   <section class="faq container">
-    <h2>Preguntas Frecuentes</h2>
+    <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
     <div class="accordion" id="faqAccordion">
       <div class="card">
         <div class="card-header" id="headingOne">
@@ -100,7 +102,6 @@
             </button>
           </h3>
         </div>
-
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
           <div class="card-body">
             Aceptamos pagos con tarjeta de crédito/débito (Visa, Mastercard,
@@ -155,7 +156,8 @@
         </div>
         <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
           <div class="card-body">
-            Puedes contactarnos por todos nuestros medios ingresando al siguiente link:
+            Puedes contactarnos por todos nuestros medios ingresando al
+            siguiente link:
             <a href="contactos.html">Contacto</a>.
           </div>
         </div>
@@ -163,17 +165,24 @@
     </div>
   </section>
 
-  <footer class="ftr-nosotros bg-dark text-light text-center py-5">
+  <footer class="bg-dark text-light text-center py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <p class="mb-0">CopyRight 2024 ©CoderTech</p>
+          <div class="social-icons mt-3">
+            <a href="#" class="text-light mr-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+            <a href="#" class="text-light mr-3"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-light"><i class="fab fa-twitter fa-lg"></i></a>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
+  </footer>  
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
