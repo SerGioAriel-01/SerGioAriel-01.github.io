@@ -6,6 +6,7 @@ $padding: 20px;
 $color-texto: black; 
 $titulo-section: center;
 $color-nav-click: #00ccff;
+$margin-top: 4px;
 
 // Estilos generales
 html {
@@ -210,10 +211,9 @@ p{
 }
 
 .faq {
-    max-width: 800px; /* Ajusta este valor según tu diseño */
-    margin: auto; /* Centra el contenido horizontalmente */
-  }
-  
+    max-width: 800px; 
+    margin: auto; 
+  }  
 
 /*CSS para la pagina productos*/
 
@@ -259,5 +259,5 @@ img:hover{
 }
 
 footer{
-    margin-top: 40px;
+    margin-top: $margin-top*10;
 }
